@@ -5,6 +5,7 @@ FROM python:3.9-slim
 ENV PYTHON_HOME /usr/local/bin/python
 ENV PATH $PYTHON_HOME:$PATH
 
+RUN python3.9 -m pip install jupyterlab
 # switch working directory
 WORKDIR /app
 
