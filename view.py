@@ -8,13 +8,13 @@ import base
 import secrets
 import pymongo
 import bcrypt
-from mongodb_interface import dockerMongoDB
+# from mongodb_interface import dockerMongoDB
 
 app = Flask(__name__)
 secret_key = secrets.token_hex(16)
 app.secret_key = secret_key
 
-mongo_client_instance, records = dockerMongoDB()
+# mongo_client_instance, records = dockerMongoDB()
 
 class RASA:
     def __init__(self, nl_instruction: str, intent: str, resources: dict):
